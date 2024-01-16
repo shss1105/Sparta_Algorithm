@@ -1,19 +1,13 @@
-using System;
-
-public class Solution 
-{
-    public int solution(int n) 
+public class Solution {
+    public double solution(int[] arr) 
     {
-        string number = n.ToString();
-
-        char[] list = number.ToCharArray();
-
-        int answer = 0;
-
-        for (int i = 0; i < number.Length; i++)
+        double answer = 0;
+        
+        for(int i = 0 ; i < arr.Length ; i++)
         {
-            answer += int.Parse(number[i].ToString());
+            answer += arr[i];
         }
+        answer = answer / arr.Length;
         return answer;
     }
 }
