@@ -4,12 +4,15 @@ public class Solution
 {
     public int solution(int n) 
     {
+        string number = n.ToString();
+
+        char[] list = number.ToCharArray();
+
         int answer = 0;
-        
-        while(n>0)
+
+        for (int i = 0; i < number.Length; i++)
         {
-            answer += n%10;
-            n = n / 10;
+            answer += int.Parse(number[i].ToString());
         }
         return answer;
     }
