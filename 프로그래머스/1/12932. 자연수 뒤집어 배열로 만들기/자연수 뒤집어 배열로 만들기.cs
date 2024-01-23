@@ -10,7 +10,7 @@ public class Solution
         {
             if(n>10)
             {
-                answer[i] = (int)(n%10);
+                answer[i] = (int)(n%10);   // int의 범위, 형변환
                 n = n/10;
             }
             else
